@@ -3,7 +3,8 @@ const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('hoidanit', 'root', null, {
     host: 'localhost',
-    dialect: 'mysql' /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */
+    dialect: 'mysql',
+    logging: false,
 });
 
 let connectDB = async () => {
